@@ -3,9 +3,9 @@ const client = new Discord.Client();
 // Ping Module
 module.exports = {
     // Name of Command
-    name: 'dm',
+    name: 'hi',
     // Description of Command
-    description: 'dm!',
+    description: 'hi!',
     // Guild - TRUE
     guildOnly: true,
     // Cooldown
@@ -13,7 +13,7 @@ module.exports = {
     // Execute Command - Parameters: message
     execute(message) {
        
-            message.author.send("Hey " +message.author.username+" I'm Riley! I'm here to provide resources to assist with your mental health needs and wants. Type in !continue to get started");
+            message.channel.send("Hey " +message.author.username+" I'm Riley! I'm here to provide resources to assist with your mental health needs and wants. Type in !continue to get started");
          
         }
 };

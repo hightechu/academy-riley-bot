@@ -19,7 +19,7 @@ module.exports = {
             sentMessage.react('☁️');
             sentMessage.react('🌧️');
             const filter = (reaction, user) => {
-                return reaction.emoji.name === '☀️' && user.id === message.author.id;
+                return (reaction.emoji.name === '☀️' || reaction.emoji.name === '☁️'|| reaction.emoji.name === '🌧️') && user.id === message.author.id;
             };
 
             sentMessage.awaitReactions(filter, { max: 1, time: 600000, errors: ['time'] })
@@ -28,7 +28,10 @@ module.exports = {
                     const reaction = collected.first();
 
                     if (reaction.emoji.name === '☀️') {
-                        message.channel.send('You reacted with a sun.');
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor("Riley")
+                        .setDescription("That's great to hear!");
+                        message.channel.send(embed);
                     } else if (reaction.emoji.name === '☁️') {
                         message.channel.send('You reacted with a cloud.');
                     } else {
