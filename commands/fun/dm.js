@@ -3,9 +3,9 @@ const client = new Discord.Client();
 // Ping Module
 module.exports = {
     // Name of Command
-    name: 'hi',
+    name: 'dm',
     // Description of Command
-    description: 'hi!',
+    description: 'dms the user',
     // Guild - TRUE
     guildOnly: true,
     // Cooldown
@@ -13,7 +13,7 @@ module.exports = {
     // Execute Command - Parameters: message
     execute(message) {
        
-            message.channel.send("Hey " +message.author.username+" I'm Riley! I'm here to provide resources to assist with your mental health needs and wants. Type in !continue to get started");
+            message.author.send("Hey " +message.author.username+", welcome to your DMs. Feel free to talk about whatever you need to, and although I'm just a bot I'm here to listen 😊 It is very possible that through talking to me and maybe reading over your messages, you might find a solution or some clarity to what it is that's bothering you.");
          
         }
 };

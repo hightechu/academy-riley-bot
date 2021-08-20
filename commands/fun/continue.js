@@ -30,16 +30,25 @@ module.exports = {
                     if (reaction.emoji.name === '☀️') {
                         const embed = new Discord.MessageEmbed()
                         .setAuthor("Riley")
+                        .setImage("https://media.giphy.com/media/l0MYJnJQ4EiYLxvQ4/giphy.gif")
                         .setDescription("That's great to hear!");
                         message.channel.send(embed);
                     } else if (reaction.emoji.name === '☁️') {
-                        message.channel.send('You reacted with a cloud.');
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor("Riley")
+                        .setImage("https://media.giphy.com/media/6mm6ly3pO41B0TOrEX/giphy.gif")
+                        .setDescription("Do you want to talk about it? Type in !yes or !no");
+                        message.channel.send(embed);
                     } else {
-                        message.reply('You reacted with a rain cloud.');
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor("Riley")
+                        .setImage("https://media.giphy.com/media/uY8WGNPtfxVySi9w8v/giphy.gif")
+                        .setDescription("I'm just a bot but I'd be happy to listen. If you are in need of professional service please type !professional. If you'd like, type !contacts to receive your discord friends list. If not, please feel free to confide in me by typing in !dm :)");
+                        message.channel.send(embed);
                     }
                 })
                 .catch(collected => {
-                    message.reply('You reacted with neither a thumbs up, nor a thumbs down.');
+                    message.reply('you did not react');
                 });
         });
     }
