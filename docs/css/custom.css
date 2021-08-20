@@ -1,3 +1,6 @@
+/*   z      k */
+
+
 /* Custom CSS */
 
 /* Header */
@@ -15,5 +18,26 @@ header {
   padding: 2.5rem 0;
 }
 h3 {
-  color: #8546b5;
+  color: #ef233c;
+}
+h1{
+  font-size: 26px;
+  text-align: left;
+  color:#2b2d42;
+}
+.logo{
+  display:flex;
+  justify-content: center;
+  width:auto;
+}
+
+p{
+  color:#2d99FF;
+  font-weight: bold;
+}
+.doc{
+  color:#ef233c;
+}
+h2{
+  text-align: center;
 }
