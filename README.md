@@ -2,7 +2,7 @@
 
 ## About
 
-For more information about Riley Bot commands visit the [documentation](https://hightechu.github.io/accelerator-scheduhealth-bot/docs).
+For more information about Riley Bot commands visit the [documentation](https://hightechu.github.io/accelerator-riley-bot/docs).
 
 ## Screenshots
 
